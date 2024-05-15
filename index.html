@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importe o script JavaScript -->
+    <script src="script.js" type="module"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#DBA958",
+              light: "#deb168",
+              dark: "#c5984f",
+              title: "#0a2540",
+              paragraphy: "#425466",
+              background: "#F6F9FC",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Player contabilidade</title>
+  </head>
+  <body class="bg-[#F6F9FC] text-paragraphy">
+    <main class="mx-auto max-w-[1200px] px-4">
+      <!-- HERO -->
+      <section
+        class="container h-full max-h-[1200px] mb-8 md:mb-4 flex flex-col md:flex-row"
+      >
+        <!-- IMAGE HERO-->
+        <div
+          class="w-full flex-1 p-9 md:p-24 relative flex justify-center flex-col"
+        >
+          <img class="" src="img/img-hero-2.jpg" alt="" srcset="" />
+
+          <div
+            class="floating-2 max-w-40 md:max-w-64 p-2 border rounded-lg absolute left-2 md:left-4 top-4 md:top-10 flex flex-col overflow-hidden"
+          >
+            <div
+              class="absolute right-[-10px] left-[-10px] bottom-[-10px] top-[-10px] bg-white opacity-95"
+              
+            ></div>
+
+            <p class="z-10 text-title font-bold text-xs">Lucas Ferreira</p>
+            <p class="z-10 text-title text-xs">Administrador</p>
+            <p class="z-10 text-primary text-xs">★★★★★</p>
+            <p class="z-10 text-xs">
+              Player Contabilidade chegou na minha vida como um sinal de
+              salvação da minha empresa, trazendo mudanças e melhorias
+              necessárias em toda parte contábil.
+            </p>
+          </div>
+
+          <div
+            class="floating max-w-60 md:max-w-64 p-2 border rounded-lg absolute right-2 md:right-4 bottom-4 md:bottom-10 flex flex-col overflow-hidden"
+          >
+            <div
+              class="absolute right-[-10px] left-[-10px] bottom-[-10px] top-[-10px] bg-white opacity-95"
+            ></div>
+
+            <p class="z-10 text-title font-bold text-xs">Fabíola Stranieri</p>
+            <p class="z-10 text-title text-xs">Administradora</p>
+            <p class="z-10 text-primary text-xs">★★★★★</p>
+            <p class="z-10 text-xs">
+              A Player Contabilidade proporciona soluções inovadoras na
+              administração da minha farmácia criando base para um crescimento
+              saudável na economia de impostos.
+            </p>
+          </div>
+        </div>
+        <!-- RIGHT -->
+        <div
+          class="w-full flex-1 space-y-4 md:py-16 flex flex-col justify-center relative gap-3"
+        >
+          <div class="flex-col md:flex-row flex gap-2">
+            <p class="text-2xl md:text-xl">
+              <b class="text-primary">+20</b> empresas em
+            </p>
+            <p class="font-normal">
+              <b class="bg-title p-2 rounded-lg text-white text-3xl md:text-2xl"
+                >Santana do Araguaia</b
+              >
+            </p>
+          </div>
+          <h1 class="text-6xl font-bold tracking-tighter text-title">
+            Mais de <b class="text-primary">12 milhões em economia</b> só em
+            2023
+          </h1>
+
+          <div
+            class="inline-flex items-center gap-2 md:gap-0 bg-gray-100 rounded-lg py-2 border px-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+            <p>
+              Contabilidade especializada em
+              <b class="text-dark">lucro real</b>
+            </p>
+          </div>
+
+          <p>
+            Transforme sua contabilidade em uma vantagem competitiva.
+            <b
+              >Descubra como podemos ajudar sua farmácia a prosperar hoje
+              mesmo.</b
+            >
+          </p>
+          <div>
+            <button
+              class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
+            >
+              Agende uma Consulta Gratuita
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURIOSIDADE -->
+      <section
+        class="container py-10 md:py-14 mb-8 md:mb-4 p-2 bg-gray-100 border rounded-lg"
+      >
+        <p class="text-center text-2xl">
+          Você sabia que empresas que optam pelo <b>Lucro Real</b> podem ter uma
+          economia de <br /><b class="text-white bg-title rounded-md px-2"
+            >40% a 60%</b
+          >
+          nos impostos?
+        </p>
+      </section>
+
+      <!-- PORQUE A PLAYER -->
+      <section class="container py-10 md:py-14 mb-8 md:mb-4 md:my-10">
+        <h1
+          class="text-4xl font-bold tracking-tight mb-6 text-title text-center"
+        >
+          Por que escolher a Player Contabilidade?
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div
+            class="flex-1 p-3 md:p-8 bg-gray-100 border md:border-background md:bg-background hover:bg-gray-100 hover:border-gray-200 rounded-lg flex items-start"
+          >
+            <div class="w-5 h-5 mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-12 h-12 p-2 bg-light rounded-md text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="pb-1 font-bold text-lg">Experiência e expertise</p>
+              <p>
+                Mais de 20 clientes em Santana e mais de 800 em todo o Brasil.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex-1 p-3 md:p-8 bg-gray-100 border md:border-background md:bg-background hover:bg-gray-100 hover:border-gray-200 rounded-lg flex items-start"
+          >
+            <div class="w-5 h-5 mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-12 h-12 p-2 bg-light rounded-md text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="pb-1 font-bold text-lg">Resultados comprovados</p>
+
+              <p>
+                Em 2023, geramos R$ 12 milhões em economia para nossos clientes
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex-1 p-3 md:p-8 bg-gray-100 border md:border-background md:bg-background hover:bg-gray-100 hover:border-gray-200 rounded-lg flex items-start"
+          >
+            <div class="w-5 h-5 mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-12 h-12 p-2 bg-light rounded-md text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="pb-1 font-bold text-lg">Tecnologia inovadora</p>
+
+              <p>
+                Utilizamos um robô de processos que minimiza riscos, automatiza
+                tarefas e garante agilidade.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex-1 p-3 md:p-8 bg-gray-100 border md:border-background md:bg-background hover:bg-gray-100 hover:border-gray-200 rounded-lg flex items-start"
+          >
+            <div class="w-5 h-5 mr-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-12 h-12 p-2 bg-light rounded-md text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m9 14.25 6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185ZM9.75 9h.008v.008H9.75V9Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008V13.5Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="pb-1 font-bold text-lg">Precificação descomplicada</p>
+
+              <p>
+                Estratégias para oferecer preços melhores que a concorrência sem
+                risco de prejuízos e Lucrar Mais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE BUSINESS -->
+      <section class="container py-10 md:py-14 px-4">
+        <h1 class="text-title text-4xl font-extrabold mb-12 text-center">
+          Conheça Alguns dos nossos clientes
+        </h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="logo-farma farma-1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-3"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-4"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-5"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-6"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-7"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-8"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-9"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-10"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-11"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-12"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-13"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-14"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-15"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-16"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-17"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIS DE 800 -->
+      <section
+        class="container py-10 md:py-14 mb-8 md:mb-4 flex flex-col gap-2 border rounded-lg p-3"
+      >
+        <div class="flex-1 md:max-w-[50%]">
+          <h1 class="text-title text-4xl font-extrabold mb-6">
+            Nossos Serviços São Escolha de Mais de
+            <b class="text-primary">800</b> Empresários em Todo o Brasil
+          </h1>
+          <p class="text-paragraphy">
+            Oferecemos soluções contábeis sob medida que garantem a satisfação e
+            o sucesso de nossos clientes, estendendo nosso apoio contábil
+            especializado para além das fronteiras, atendendo a empresários em
+            mais de <b>24 estados</b> brasileiros.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+          <div>
+            <p
+              class="font-bold text-title text-2xl border-l-2 border-primary pl-3 md:pl-6 mb-2"
+            >
+              <b class="text-primary">+800</b> Empresários satisfeitos.
+            </p>
+            <p class="p-4">
+              mais de <b>800 empresários em todo o Brasil</b> confiam em nossos
+              serviços e alcançaram a satisfação que merecem.
+            </p>
+          </div>
+          <div>
+            <p
+              class="font-bold text-title text-2xl border-l-2 border-primary pl-3 md:pl-6 mb-2"
+            >
+              <b class="text-primary">+24</b> Estados Brasileiros
+            </p>
+            <p class="p-4">
+              Estendemos nosso apoio contábil especializado para além das
+              fronteiras, atendendo a empresários em mais de
+              <b>24 estados brasileiros</b>.
+            </p>
+          </div>
+          <div>
+            <p
+              class="font-bold text-title text-2xl border-l-2 border-primary pl-3 md:pl-6 mb-2"
+            >
+              <b class="text-primary">97%</b> Clientes satisfeitos.
+            </p>
+            <p class="p-4">
+              Nosso compromisso com a excelência é refletido no alto índice de
+              satisfação de <b>97% entre nossos clientes</b>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOSSO TIME -->
+      <section class="container py-2 md:py-14 mb-8 md:mb-4 flex flex-col md:flex-row">
+        <div class="flex-1 flex flex-col justify-center">
+          <h1 class="text-title text-4xl font-extrabold mb-6">Nosso time</h1>
+          <p class="text-paragraphy mb-6 max-w-96">
+            Aqui, profissionalismo é mais do que uma palavra - é um compromisso.
+            Nossa equipe está empenhada em fornecer serviços contábeis da mais
+            alta qualidade, mantendo os mais altos padrões éticos e
+            profissionais em todos os momentos.
+          </p>
+          <div>
+            <button
+              class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
+            >
+              Agende uma Consulta Gratuita
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 justify-center items-center py-12">
+          <img class="" src="img/img-hero-3.jpg" alt="" srcset="" />
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <section class="container bg-white rounded px-8 pt-6 pb-8 mb-4">
+        <h1 class="text-title text-2xl md:text-3xl font-extrabold mb-6">
+          Solicite uma <b class="text-primary">AVALIAÇÃO SEM COMPROMISSO</b> e
+          descubra como podemos te ajudar a aumentar seus lucros.
+        </h1>
+        <form id="subscriptionForm">
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="name"
+            >
+              Nome
+            </label>
+            <input
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nome completo"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="tel">
+              whatsapp
+            </label>
+            <input
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              id="tel"
+              name="tel"
+              placeholder="whatsapp"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="email"
+            >
+              Email
+            </label>
+            <input
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Seu melhor email"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
+          >
+            Agende uma Consulta Gratuita
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-title text-paragraphy py-2">
+      <div
+        class="flex-col md:flex-row text-center mx-auto max-w-[1200px] flex justify-between"
+      >
+        <span class="text-sm">PLAYER CONTABILIDADE</span>
+        <span class="text-sm">CNPJ 33.036.816/0001-24</span>
+        <span class="text-sm font-bold"
+          >CRC -TO 000580/0-8 e CRA-TO 20-03828</span
+        >
+      </div>
+    </footer>
+
+    <!-- ======= JS ======= -->
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "progressbar",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
