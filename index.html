@@ -59,7 +59,6 @@
           >
             <div
               class="absolute right-[-10px] left-[-10px] bottom-[-10px] top-[-10px] bg-white opacity-95"
-              
             ></div>
 
             <p class="z-10 text-title font-bold text-xs">Lucas Ferreira</p>
@@ -138,7 +137,7 @@
               mesmo.</b
             >
           </p>
-          <div>
+          <a href="https://api.whatsapp.com/send?phone=5563984381385">
             <button
               class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
             >
@@ -158,7 +157,7 @@
                 />
               </svg>
             </button>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -419,7 +418,9 @@
       </section>
 
       <!-- NOSSO TIME -->
-      <section class="container py-2 md:py-14 mb-8 md:mb-4 flex flex-col md:flex-row">
+      <section
+        class="container py-2 md:py-14 mb-8 md:mb-4 flex flex-col md:flex-row"
+      >
         <div class="flex-1 flex flex-col justify-center">
           <h1 class="text-title text-4xl font-extrabold mb-6">Nosso time</h1>
           <p class="text-paragraphy mb-6 max-w-96">
@@ -428,7 +429,7 @@
             alta qualidade, mantendo os mais altos padrões éticos e
             profissionais em todos os momentos.
           </p>
-          <div>
+          <a href="https://api.whatsapp.com/send?phone=5563984381385">
             <button
               class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
             >
@@ -448,7 +449,7 @@
                 />
               </svg>
             </button>
-          </div>
+          </a>
         </div>
         <div class="flex-1 justify-center items-center py-12">
           <img class="" src="img/img-hero-3.jpg" alt="" srcset="" />
@@ -588,5 +589,41 @@
         },
       });
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "838968088250779");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=838968088250779&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </body>
 </html>
