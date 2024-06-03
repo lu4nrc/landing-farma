@@ -5,13 +5,14 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-async function submitSubscription(name, tel, email) {
+async function submitSubscription(name, tel, email,cnpj) {
     console.log("Clicked")
     try {
       const subscriptionData = {
         name: name,
         tel: tel,
-        email: email
+        email: email,
+        cnpj: cnpj
       };
       
        const { data, error } = await supabase
@@ -35,6 +36,7 @@ async function submitSubscription(name, tel, email) {
     let name = event.target['name'].value;
     let tel = event.target['tel'].value;
     let email = event.target['email'].value;
+    let cnpj = event.target['cnpj'].value;
     
-    submitSubscription(name, tel, email);
+    submitSubscription(name, tel, email, cnpj);
   });
