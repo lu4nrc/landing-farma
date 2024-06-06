@@ -92,7 +92,7 @@
         <div
           class="w-full flex-1 space-y-4 md:py-16 flex flex-col justify-center relative gap-3"
         >
-          <div class="flex-col md:flex-row flex gap-2">
+          <!--           <div class="flex-col md:flex-row flex gap-2">
             <p class="text-2xl md:text-xl">
               <b class="text-primary">+20</b> empresas em
             </p>
@@ -101,7 +101,7 @@
                 >Santana do Araguaia</b
               >
             </p>
-          </div>
+          </div> -->
           <h1 class="text-6xl font-bold tracking-tighter text-title">
             Mais de <b class="text-primary">12 milhões em economia</b> só em
             2023
@@ -137,8 +137,10 @@
               mesmo.</b
             >
           </p>
-          <a href="https://api.whatsapp.com/send?phone=5563984381385">
+          <div>
+            <!-- <a href="https://api.whatsapp.com/send?phone=5563984381385"> -->
             <button
+              onclick="smoothScroll(document.getElementById('form'))"
               class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
             >
               Agende uma Consulta Gratuita
@@ -157,7 +159,8 @@
                 />
               </svg>
             </button>
-          </a>
+            <!-- </a> -->
+          </div>
         </div>
       </section>
 
@@ -359,6 +362,9 @@
             <div class="swiper-slide">
               <div class="logo-farma farma-17"></div>
             </div>
+            <div class="swiper-slide">
+              <div class="logo-farma farma-18"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -429,8 +435,10 @@
             alta qualidade, mantendo os mais altos padrões éticos e
             profissionais em todos os momentos.
           </p>
-          <a href="https://api.whatsapp.com/send?phone=5563984381385">
+          <div>
+            <!-- <a href="https://api.whatsapp.com/send?phone=5563984381385"> -->
             <button
+              onclick="smoothScroll(document.getElementById('form'))"
               class="bg-primary hover:bg-light text-white font-semibold py-4 px-5 rounded-full flex items-center gap-2 hover:gap-5"
             >
               Agende uma Consulta Gratuita
@@ -449,7 +457,8 @@
                 />
               </svg>
             </button>
-          </a>
+            <!-- </a> -->
+          </div>
         </div>
         <div class="flex-1 justify-center items-center py-12">
           <img class="" src="img/img-hero-3.jpg" alt="" srcset="" />
@@ -463,7 +472,7 @@
           descubra como podemos te ajudar a aumentar seus lucros.
         </h1>
         <form id="subscriptionForm">
-          <div class="mb-4">
+          <div class="mb-4" id="form">
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
               for="name"
